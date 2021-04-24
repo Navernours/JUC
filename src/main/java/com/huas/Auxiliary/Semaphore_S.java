@@ -10,7 +10,7 @@ public class Semaphore_S {
     public static void main(String[] args) {
         Semaphore semaphore = new Semaphore(3);
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 6; i++) {
             new Thread(()->{
                 try {
                     semaphore.acquire();
